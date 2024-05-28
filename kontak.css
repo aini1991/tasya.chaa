@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+     font-family: Arial, sans-serif;
+     background-color: #f4f4f4;
+}
+header {
+    background-image: url(natsaa.jpg);
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+    position: relative;
+}
+header::before {
+    content:  '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .3)
+}
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+nav {
+    background-color: pink;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 auto;
+}
+.logo a {
+    text-decoration: none;
+    color: rgb(233, 206, 206);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+.menu li {
+    margin: 0 1rem;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3 ease;
+}
+.menu li a:hover {
+    color: #555;
+}
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3)
+}
+.p {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
